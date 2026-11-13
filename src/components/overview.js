@@ -55,6 +55,7 @@ export const OverviewBlur = class OverviewBlur {
         Main.uiGroup.add_style_class_name("blurred-overview");
 
         this.update_components_classname();
+        this.update_light_text();
 
         this.update_backgrounds();
 
@@ -237,6 +238,13 @@ export const OverviewBlur = class OverviewBlur {
             );
     }
 
+    update_light_text() {
+        if (this.settings.overview.FORCE_LIGHT_TEXT)
+            Main.uiGroup.add_style_class_name("overview-light-text");
+        else
+            Main.uiGroup.remove_style_class_name("overview-light-text");
+    }
+
     remove_background_actors() {
         this.connections.disconnect_all_for(Main.layoutManager.overviewGroup);
         if (this.overview_background_group?.get_parent())
@@ -274,6 +282,7 @@ export const OverviewBlur = class OverviewBlur {
         this.animation_background_group = null;
 
         Main.uiGroup.remove_style_class_name("blurred-overview");
+        Main.uiGroup.remove_style_class_name("overview-light-text");
         OVERVIEW_COMPONENTS_STYLE.forEach(
             style => Main.uiGroup.remove_style_class_name(style)
         );

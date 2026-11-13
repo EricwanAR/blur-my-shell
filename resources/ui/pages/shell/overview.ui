@@ -62,6 +62,13 @@
         </child>
 
         <child>
+          <object class="AdwSwitchRow" id="force_light_text">
+            <property name="title" translatable="yes">Force light text</property>
+            <property name="subtitle" translatable="yes">Useful with a light shell theme</property>
+          </object>
+        </child>
+
+        <child>
           <object class="AdwSpinRow">
             <property name="title" translatable="yes">Workspace corner radius</property>
             <property name="adjustment">workspace_corner_radius</property>

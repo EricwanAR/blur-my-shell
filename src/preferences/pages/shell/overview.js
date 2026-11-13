@@ -15,6 +15,7 @@ export const Overview = GObject.registerClass({
         'pipeline_choose_auto_light_row',
         'pipeline_choose_auto_dark_row',
         'style_components',
+        'force_light_text',
         'workspace_corner_radius'
     ],
 }, class Overview extends Adw.PreferencesPage {
@@ -35,6 +36,7 @@ export const Overview = GObject.registerClass({
             ['blur', this._blur, 'active'],
             ['pipeline-auto-mode', this._pipeline_auto_mode_switch, 'active'],
             ['style-components', this._style_components, 'selected'],
+            ['force-light-text', this._force_light_text, 'active'],
             ['workspace-corner-radius', this._workspace_corner_radius, 'value'],
         ]);
 

@@ -646,3 +646,29 @@
     background-color: rgba(255, 255, 255, 0.1) !important;
     border: none !important;
 }
+
+
+/*
+* `.overview-light-text`
+*/
+
+.overview-light-text #appDisplay .overview-tile,
+.overview-light-text #appDisplay .overview-tile StLabel,
+.overview-light-text #appDisplay .overview-tile.app-folder,
+.overview-light-text #appDisplay .overview-tile.app-folder StLabel,
+.overview-light-text #appDisplay .app-folder,
+.overview-light-text #appDisplay .app-folder StLabel,
+.overview-light-text #overviewGroup .apps-scroll-view .overview-tile,
+.overview-light-text #overviewGroup .apps-scroll-view .overview-tile StLabel,
+.overview-light-text #overviewGroup .apps-scroll-view .overview-tile.app-folder,
+.overview-light-text #overviewGroup .apps-scroll-view .overview-tile.app-folder StLabel,
+.overview-light-text #overviewGroup .apps-scroll-view .app-folder,
+.overview-light-text #overviewGroup .apps-scroll-view .app-folder StLabel,
+.overview-light-text #overviewGroup .overview-tile.app-folder,
+.overview-light-text #overviewGroup .overview-tile.app-folder StLabel,
+.overview-light-text #overviewGroup .app-folder,
+.overview-light-text #overviewGroup .app-folder StLabel,
+.overview-light-text > .overview-tile.app-folder,
+.overview-light-text > .overview-tile.app-folder StLabel {
+    color: #f6f5f4 !important;
+}

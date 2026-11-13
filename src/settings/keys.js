@@ -17,6 +17,7 @@ export const KEYS = [
             { type: Type.S, name: "pipeline-light" },
             { type: Type.S, name: "pipeline-dark" },
             { type: Type.I, name: "style-components" },
+            { type: Type.B, name: "force-light-text" },
             { type: Type.I, name: "workspace-corner-radius" },
         ]
     },

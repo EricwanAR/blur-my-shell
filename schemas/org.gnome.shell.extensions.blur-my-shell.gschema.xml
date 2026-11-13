@@ -219,6 +219,11 @@
             <default>4</default>
             <summary>Enum to select the style of the components in overview (0 not styled, 1 light, 2 dark, 3 transparent, 4 automatic)</summary>
         </key>
+        <!-- FORCE LIGHT TEXT -->
+        <key type="b" name="force-light-text">
+            <default>false</default>
+            <summary>Boolean, whether or not to force the overview app grid to have light text, useful when using light theme</summary>
+        </key>
         <!-- WORKSPACE CORNER RADIUS -->
         <key type="i" name="workspace-corner-radius">
             <default>30</default>
